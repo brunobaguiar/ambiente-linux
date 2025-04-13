@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente de Desenvolvimento Linux Completo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-brands fa-linux"></i>
+                <h1>Ambiente de Desenvolvimento Linux</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Menu de navegação">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="main-nav">
+                    <li><a href="#introducao" class="active">Introdução</a></li>
+                    <li><a href="#virtualbox">VirtualBox</a></li>
+                    <li><a href="#ubuntu">Ubuntu</a></li>
+                    <li><a href="#pos-instalacao">Pós-Instalação</a></li>
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#nodejs">Node.js</a></li>
+                    <li><a href="#docker">Docker</a></li>
+                    <li><a href="#vscode">VS Code</a></li>
+                    <li><a href="#ia">Ferramentas IA</a></li>
+                    <li><a href="#boas-praticas">Boas Práticas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introducao" class="active">
+                <h2>Introdução</h2>
+                <div class="card">
+                    <h3>Bem-vindo ao Guia Completo de Ambiente de Desenvolvimento Linux</h3>
+                    <p>Este tutorial foi criado para ajudar você a montar um ambiente de desenvolvimento completo em Linux, utilizando o Oracle VirtualBox e Ubuntu 22.04 LTS. Seja você um iniciante sem experiência prévia ou um desenvolvedor experiente, este guia fornecerá instruções detalhadas para configurar um ambiente versátil e poderoso.</p>
+                    
+                    <div class="info-box">
+                        <h4>O que você vai aprender:</h4>
+                        <ul>
+                            <li>Instalação e configuração do Oracle VirtualBox</li>
+                            <li>Criação de uma máquina virtual com Ubuntu 22.04 LTS</li>
+                            <li>Configuração pós-instalação do Ubuntu</li>
+                            <li>Instalação e configuração de Python, Node.js, Docker e PostgreSQL</li>
+                            <li>Configuração do VS Code e Cursor AI</li>
+                            <li>Integração com ferramentas modernas de IA (Claude API, DeepSeek SDK, OpenAI)</li>
+                            <li>Organização de projetos e boas práticas de desenvolvimento</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Requisitos</h3>
+                    <p>Para seguir este tutorial, você precisará de:</p>
+                    <ul>
+                        <li>Um computador com pelo menos 8GB de RAM (16GB recomendado)</li>
+                        <li>Pelo menos 50GB de espaço livre em disco</li>
+                        <li>Processador com suporte à virtualização (Intel VT-x ou AMD-V)</li>
+                        <li>Conexão com a internet</li>
+                    </ul>
+                    
+                    <h3>Como usar este tutorial</h3>
+                    <p>Este tutorial está organizado em módulos sequenciais. Recomendamos seguir a ordem apresentada, pois cada módulo se baseia no anterior. Use o menu de navegação para acessar cada seção.</p>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#virtualbox" class="btn btn-primary">Começar: Instalação do VirtualBox <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="virtualbox">
+                <h2>Instalação do VirtualBox</h2>
+                <div class="card">
+                    <h3>Oracle VirtualBox</h3>
+                    <p>O Oracle VirtualBox é um software de virtualização poderoso e gratuito que permite executar múltiplos sistemas operacionais em uma única máquina física. Nesta seção, você aprenderá como instalar e configurar o VirtualBox em seu sistema.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-instalacao-virtualbox.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#introducao" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Introdução</a>
+                        <a href="#ubuntu" class="btn btn-primary">Próximo: Instalação do Ubuntu <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ubuntu">
+                <h2>Instalação do Ubuntu</h2>
+                <div class="card">
+                    <h3>Ubuntu 22.04 LTS</h3>
+                    <p>O Ubuntu 22.04 LTS (Jammy Jellyfish) é uma distribuição Linux estável e de longo suporte, ideal para desenvolvimento. Nesta seção, você aprenderá como criar uma máquina virtual no VirtualBox e instalar o Ubuntu 22.04 LTS.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-instalacao-ubuntu.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#virtualbox" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Instalação do VirtualBox</a>
+                        <a href="#pos-instalacao" class="btn btn-primary">Próximo: Configuração Pós-Instalação <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pos-instalacao">
+                <h2>Configuração Pós-Instalação</h2>
+                <div class="card">
+                    <h3>Configuração Pós-Instalação do Ubuntu</h3>
+                    <p>Após instalar o Ubuntu, é importante realizar algumas configurações iniciais para preparar o sistema para desenvolvimento. Nesta seção, você aprenderá como atualizar o sistema, instalar ferramentas essenciais e otimizar o desempenho.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-pos-instalacao-ubuntu.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#ubuntu" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Instalação do Ubuntu</a>
+                        <a href="#python" class="btn btn-primary">Próximo: Python e Ferramentas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="python">
+                <h2>Python e Ferramentas</h2>
+                <div class="card">
+                    <h3>Python, venv, pip, pipx e Jupyter Lab</h3>
+                    <p>Python é uma linguagem de programação versátil e poderosa, essencial para desenvolvimento, data science e machine learning. Nesta seção, você aprenderá como configurar um ambiente Python completo com ambientes virtuais, gerenciadores de pacotes e Jupyter Lab.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-python-ferramentas.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#pos-instalacao" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Configuração Pós-Instalação</a>
+                        <a href="#nodejs" class="btn btn-primary">Próximo: Node.js e Frontend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nodejs">
+                <h2>Node.js e Frontend</h2>
+                <div class="card">
+                    <h3>Node.js, npm e Ferramentas Frontend</h3>
+                    <p>Node.js é uma plataforma para execução de JavaScript no servidor, essencial para desenvolvimento web moderno. Nesta seção, você aprenderá como instalar e configurar o Node.js, npm e ferramentas frontend como React, Vite e Tailwind CSS.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-nodejs-frontend.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#python" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Python e Ferramentas</a>
+                        <a href="#docker" class="btn btn-primary">Próximo: Docker e PostgreSQL <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="docker">
+                <h2>Docker e PostgreSQL</h2>
+                <div class="card">
+                    <h3>Docker, Docker Compose e PostgreSQL</h3>
+                    <p>Docker é uma plataforma para desenvolvimento, envio e execução de aplicações em contêineres. Nesta seção, você aprenderá como instalar e configurar o Docker, Docker Compose e PostgreSQL para desenvolvimento com bancos de dados.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-docker-postgresql.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#nodejs" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Node.js e Frontend</a>
+                        <a href="#vscode" class="btn btn-primary">Próximo: VS Code e Cursor AI <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vscode">
+                <h2>VS Code e Cursor AI</h2>
+                <div class="card">
+                    <h3>Visual Studio Code e Cursor AI</h3>
+                    <p>Visual Studio Code é um editor de código-fonte leve e poderoso, e o Cursor AI é uma versão aprimorada com recursos de IA integrados. Nesta seção, você aprenderá como instalar e configurar ambos para um ambiente de desenvolvimento produtivo.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-vscode-cursor.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#docker" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Docker e PostgreSQL</a>
+                        <a href="#ia" class="btn btn-primary">Próximo: Ferramentas de IA <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ia">
+                <h2>Ferramentas de IA</h2>
+                <div class="card">
+                    <h3>Claude API, DeepSeek SDK e OpenAI CLI</h3>
+                    <p>As ferramentas de IA modernas podem aumentar significativamente sua produtividade como desenvolvedor. Nesta seção, você aprenderá como instalar e configurar a Claude API, Claude Code, DeepSeek SDK e OpenAI CLI para desenvolvimento assistido por IA.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-ferramentas-ia.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#vscode" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: VS Code e Cursor AI</a>
+                        <a href="#boas-praticas" class="btn btn-primary">Próximo: Boas Práticas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="boas-praticas">
+                <h2>Boas Práticas</h2>
+                <div class="card">
+                    <h3>Organização de Pastas e Boas Práticas</h3>
+                    <p>Uma boa organização de projetos e a adoção de boas práticas são essenciais para o desenvolvimento eficiente. Nesta seção, você aprenderá como estruturar seus projetos, documentar seu código e seguir boas práticas de desenvolvimento.</p>
+                    
+                    <div class="content-placeholder" data-content="guia-boas-praticas.md">
+                        <!-- O conteúdo será carregado via JavaScript -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i> Carregando conteúdo...
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="#ia" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Anterior: Ferramentas de IA</a>
+                        <a href="#introducao" class="btn btn-primary">Voltar ao Início <i class="fas fa-home"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Ambiente de Desenvolvimento Linux | Criado com <i class="fas fa-heart"></i> para desenvolvedores</p>
+        </footer>
+    </div>
+
+    <script src="js/prism.js"></script>
+    <script src="js/marked.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
